@@ -66,8 +66,4 @@ Open to opportunities, collaborations, and innovative projects.
 
 ---
 
-<div align="center">
-
-*Crafted with precision*
-
 </div>
