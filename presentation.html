@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Biosa - Full Stack Developer</title>
+    <style>
+        :root {
+            --font-family-display: Arial, sans-serif;
+            --font-weight-display: 600;
+            --font-family-content: Arial, sans-serif;
+            --font-weight-content: 400;
+            --font-size-content: 16px;
+            --line-height-content: 1.4;
+        }
+
+        body.theme-dark {
+            --color-bg-base: #0f172a;
+            --color-bg-elevated: #020617;
+            --color-bg-surface: #1e293b;
+            --color-bg-muted: #334155;
+            --color-text-primary: #f1f5f9;
+            --color-text-secondary: #cbd5e1;
+            --color-text-muted: #94a3b8;
+            --color-text-accent: #38bdf8;
+            --color-primary: #38bdf8;
+            --color-primary-foreground: #0f172a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-content);
+            font-weight: var(--font-weight-content);
+            font-size: var(--font-size-content);
+            line-height: var(--line-height-content);
+            overflow-x: hidden;
+        }
+
+        .slide {
+            width: 960px;
+            height: 540px;
+            margin: 0 auto 20px;
+            display: flex;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .row { flex-direction: row; }
+        .col { flex-direction: column; }
+        .center {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .fill-width { flex: 1; }
+        .items-center { align-items: center; }
+
+        .gap-lg { gap: 1.5rem; }
+        .p-16 { padding: 4rem; }
+        .mb-2 { margin-bottom: 0.5rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .mt-2 { margin-top: 0.5rem; }
+        .mt-4 { margin-top: 1rem; }
+        .mt-8 { margin-top: 2rem; }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-family-display);
+            font-weight: var(--font-weight-display);
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        h1 { font-size: 3rem; }
+        h2 { font-size: 2.25rem; }
+        h3 { font-size: 1.75rem; }
+
+        .text-6xl { font-size: 3.75rem; }
+        .text-4xl { font-size: 2.25rem; }
+        .text-2xl { font-size: 1.5rem; }
+        .text-xl { font-size: 1.25rem; }
+        .text-lg { font-size: 1.125rem; }
+        .text-sm { font-size: 0.875rem; }
+
+        .text-center { text-align: center; }
+        .opacity-80 { opacity: 0.8; }
+        .opacity-70 { opacity: 0.7; }
+
+        ul { margin-left: 2rem; line-height: 1.8; }
+        li { list-style: disc; margin-bottom: 0.75rem; }
+        li:last-child { margin-bottom: 0; }
+    </style>
+</head>
+<body class="theme-dark">
+
+    <!-- Slide 1: Title Slide -->
+    <section class="slide p-16 col center" style="background-color: #020617; color: #f1f5f9;">
+        <h1 class="text-6xl mb-4" style="color: #38bdf8;">Marco Biosa</h1>
+        <p class="text-2xl" style="color: #cbd5e1;">Full Stack Developer</p>
+        <p class="text-xl mt-8" style="color: #94a3b8;">Aspiring Senior Developer | Rome, Italy</p>
+        <p class="text-sm mt-4" style="color: #94a3b8;">GitHub • LinkedIn • Portfolio</p>
+    </section>
+
+    <!-- Slide 2: About Me -->
+    <section class="slide p-16 col" style="background-color: #0f172a; color: #f1f5f9;">
+        <h2 class="mb-6" style="color: #38bdf8;">About Me</h2>
+        <ul class="text-lg" style="color: #cbd5e1;">
+            <li>Junior Full Stack Developer passionate about elegant solutions</li>
+            <li>Real experience with Next.js, React, Flutter, and Firebase</li>
+            <li>Enthusiast of AI/ML and intelligent automation</li>
+            <li>Motivated to grow toward Senior Developer level</li>
+        </ul>
+    </section>
+
+    <!-- Slide 3: Frontend Technologies -->
+    <section class="slide p-16 col" style="background-color: #0f172a; color: #f1f5f9;">
+        <h2 class="mb-6" style="color: #38bdf8;">Frontend Technologies</h2>
+        <ul class="text-lg" style="color: #cbd5e1;">
+            <li>React & Next.js - Production-ready projects</li>
+            <li>TypeScript & JavaScript - Type-safe and scalable</li>
+            <li>CSS & Responsive Design - Optimized UX</li>
+            <li>Flutter - Cross-platform mobile apps</li>
+        </ul>
+    </section>
+
+    <!-- Slide 4: Backend - Python & Django -->
+    <section class="slide p-16 col" style="background-color: #0f172a; color: #f1f5f9;">
+        <h2 class="mb-6" style="color: #38bdf8;">Backend - Python & Django</h2>
+        <ul class="text-lg" style="color: #cbd5e1;">
+            <li>Python - Primary backend language</li>
+            <li>Django - Robust and scalable web framework</li>
+            <li>Django REST Framework - Professional RESTful APIs</li>
+            <li>Django ORM - Database design and query optimization</li>
+        </ul>
+    </section>
+
+    <!-- Slide 5: Database & Cloud -->
+    <section class="slide p-16 col" style="background-color: #0f172a; color: #f1f5f9;">
+        <h2 class="mb-6" style="color: #38bdf8;">Database & Cloud Services</h2>
+        <ul class="text-lg" style="color: #cbd5e1;">
+            <li>Firebase - Realtime DB, authentication, cloud functions</li>
+            <li>SQL & PostgreSQL - Query optimization and design</li>
+            <li>Database Design - Normalization and performance</li>
+            <li>Cloud Deployment - Production-ready infrastructure</li>
+        </ul>
+    </section>
+
+    <!-- Slide 6: AI/ML Integration -->
+    <section class="slide p-16 col" style="background-color: #0f172a; color: #f1f5f9;">
+        <h2 class="mb-6" style="color: #38bdf8;">AI & Intelligent Automation</h2>
+        <ul class="text-lg" style="color: #cbd5e1;">
+            <li>Prompt Engineering - Effective LLM utilization</li>
+            <li>API Integration - OpenAI, Claude, and other AI services</li>
+            <li>ML Basics - Fundamental concepts and applications</li>
+            <li>Automation - Intelligent and optimized workflows</li>
+        </ul>
+    </section>
+
+    <!-- Slide 7: Tools & Methodologies -->
+    <section class="slide p-16 col" style="background-color: #0f172a; color: #f1f5f9;">
+        <h2 class="mb-6" style="color: #38bdf8;">Tools & Methodologies</h2>
+        <ul class="text-lg" style="color: #cbd5e1;">
+            <li>Linux & Shell - Automation and DevOps basics</li>
+            <li>Git & GitHub - Version control and collaboration</li>
+            <li>Postman & Testing - API testing and debugging</li>
+            <li>Problem Solving - Data structures and algorithms</li>
+        </ul>
+    </section>
+
+    <!-- Slide 8: Full-Stack Projects -->
+    <section class="slide p-16 col" style="background-color: #0f172a; color: #f1f5f9;">
+        <h2 class="mb-6" style="color: #38bdf8;">Full-Stack Projects</h2>
+        <ul class="text-lg" style="color: #cbd5e1;">
+            <li>Next.js + Django REST - Modern full-stack applications</li>
+            <li>React + Firebase - Real-time applications</li>
+            <li>Flutter + Python Backend - Scalable mobile apps</li>
+            <li>AI Integration - LLMs in production web and mobile</li>
+        </ul>
+    </section>
+
+    <!-- Slide 9: How I Work -->
+    <section class="slide p-16 col" style="background-color: #0f172a; color: #f1f5f9;">
+        <h2 class="mb-6" style="color: #38bdf8;">How I Work</h2>
+        <ul class="text-lg" style="color: #cbd5e1;">
+            <li>Write clean, tested, and maintainable code</li>
+            <li>Listen to feedback and iterate quickly</li>
+            <li>Learn constantly from experiences</li>
+            <li>Collaborate well in multidisciplinary teams</li>
+        </ul>
+    </section>
+
+    <!-- Slide 10: Professional Goals -->
+    <section class="slide p-16 col" style="background-color: #0f172a; color: #f1f5f9;">
+        <h2 class="mb-6" style="color: #38bdf8;">Where I'm Heading</h2>
+        <ul class="text-lg" style="color: #cbd5e1;">
+            <li>Become a Senior Full Stack Developer</li>
+            <li>Specialize in cloud architecture and DevOps</li>
+            <li>Contribute to open source projects</li>
+            <li>Mentor junior developers in the community</li>
+        </ul>
+    </section>
+
+    <!-- Slide 11: Contact -->
+    <section class="slide p-16 col center" style="background-color: #020617; color: #f1f5f9;">
+        <h2 class="mb-8" style="color: #38bdf8;">Contact Me</h2>
+        <p class="text-xl mb-4" style="color: #cbd5e1;">biosamarco98@gmail.com</p>
+        <p class="text-lg" style="color: #94a3b8;">GitHub • LinkedIn • Portfolio Website</p>
+        <p class="text-sm mt-8" style="color: #94a3b8;">Always open to new opportunities and collaborations!</p>
+    </section>
+
+</body>
+</html>
